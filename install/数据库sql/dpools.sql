@@ -472,7 +472,7 @@ CREATE TABLE `zs_sys_config`  (
 INSERT INTO `zs_sys_config` VALUES ('1', 'lockdays', '锁仓时长', '设备收益在锁仓期间将冻结，直到到期后，才能释放提取', '1', 'int', '天', NULL, '2021-04-02 14:45:40', NULL);
 INSERT INTO `zs_sys_config` VALUES ('2', 'releasedays', '线性释放时长', '设备收益锁仓到期后，按天根据总释放时长进行线性释放', '3', 'int', '天', NULL, '2021-04-02 14:45:40', NULL);
 INSERT INTO `zs_sys_config` VALUES ('3', 'default_sharetype', '默认分成比例', '设备收益按照该比例进行用户和平台分成，如果设置为80，则其中80%为用户所有。（支持两位小数）', '90', 'double', '%', NULL, '2021-04-02 14:45:40', NULL);
-INSERT INTO `zs_sys_config` VALUES ('4', 'min_drawnum', '用户最小提取数量', '用户提取申请的最小数量。', '1', 'double', 'NFC', NULL, '2021-04-02 14:45:40', NULL);
+INSERT INTO `zs_sys_config` VALUES ('4', 'min_drawnum', '用户最小提取数量', '用户提取申请的最小数量。', '1', 'double', '', NULL, '2021-04-02 14:45:40', NULL);
 
 -- ----------------------------
 -- Table structure for zs_user_mbpoit_record_detail
